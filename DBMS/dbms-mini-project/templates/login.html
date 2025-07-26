@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/login-style.css') }}">
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">*NAME*</label>
+
+
+    <ul>
+      <li><a href="/home">Home</a></li>
+    </ul>
+  </nav>
+      <form action="/user/login/" method="post">
+        <div class="imgcontainer">
+          <img src="{{ url_for('static', path='/images/avatar.png') }}" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="container">
+          <label><b>Email</b></label>
+          <input type="text" placeholder="Enter E-mail" name="user_email" required> <br>
+      
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="user_password" required>
+      
+          <button type="submit">Login</button>
+        </div>
+      
+        <div class="container">
+          <div class="psw">Don't Have an Account?<a href="/register">Register Here</a></div>
+        </div>
+      </form>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title> 
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/styles.css') }}">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Mconnect</a>
+        <nav class="nav-items">
+          <a href="#">Home</a>
+          <button id="myBtn" class="open-button">Login</button>
+        </nav>
+    </header>
+
+
+        <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="form-popup" id="myForm">
+                <form action="/user/login/" method="post">
+                    <div class="imgcontainer">
+                      <img src="{{ url_for('static', path='/images/avatar.png') }}" alt="Avatar" class="avatar">
+                    </div>
+
+                    <div class="container">
+                      <label><b>Email</b></label>
+                      <input type="text" placeholder="Enter E-mail" name="user_email" required> <br>
+
+                      <label><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="user_password" required>
+
+                      <button type="submit">Login</button>
+                    </div>
+
+                    <div class="container">
+                      <div class="psw">Don't Have an Account?<a href="/register">Register Here</a></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+        </div>
+
+    </div>
+
+    <div class="box">
+        <main>
+            <div class="intro">
+              <h1>M-connect</h1>
+              <p>It's not about perfection, it's about effort.</p>
+              <button><a href="/register">Register Now</a></button>
+            </div>
+
+            <div class="achievements">
+              <div class="work">
+                <i class="fas fa-atom"></i>
+                <p class="work-heading">Doubt Forum</p>
+                <p class="work-text">Clear your doubts efficiently by posting them here and <br> interacting with fellow students and professors.</p>
+              </div>
+
+              <div class="work">
+                <i class="fas fa-skiing"></i>
+                <p class="work-heading">References</p>
+                <p class="work-text">Enhance your studies with reference material uploaded here.</p>
+              </div>
+              <!--<div class="work">
+                <i class="fas fa-ethernet"></i>
+                <p class="work-heading"></p>
+                <p class="work-text">Keep track of your attendance constantly by recording it right here.</p>
+              </div>-->
+            </div>
+            <div class="about-me">
+              <div class="about-me-text">
+                <h2>About Us</h2>
+                <p>Welcome to Mconnect! Here our main purpose is to provide students with an online platform to help
+                    them enhance their studies by connecting with fellow students and teachers. We have a dedicated doubt forum where students can clear their doubts and also make use of the reference material available.</p>
+              </div>
+              <img src="{{ url_for('static', path='/images/about.jpg') }}">
+            </div>
+          </main>
+    </div>
+
+    <script src="{{ url_for('static', path='/js/script.js') }}"></script>
+</body>
+</html>
