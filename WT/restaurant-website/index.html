@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+      <h1>Aromatic Affair</h1>
+      <p>Where Every Bite Tells a Story</p>
+    </header>
+
+    <div class="main-content">
+        <!-- Reservation Form -->
+    <section class="reservation" id="reservation">
+        <h2>Make a Reservation</h2>
+        <div class="separator"></div>
+        <form action="#" method="POST">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+  
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+  
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+            required
+          />
+  
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required />
+  
+          <label for="time">Time</label>
+          <input type="time" id="time" name="time" required />
+  
+          <label for="guests">Number of Guests</label>
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            placeholder="Enter number of guests"
+            required
+            min="1"
+            max="20"
+          />
+  
+          <button type="submit">Reserve Table</button>
+        </form>
+      </section>
+  
+      <!-- Gallery Section -->
+      <div class="gallery">
+          <h2>Our Delicious Dishes</h2>
+          <div class="gallery-images">
+              <img src="images/beef-stroganoff.jpeg" alt="Dish 1">
+              <img src="images/choco-lava-cake.jpeg" alt="Dish 2">
+              <img src="images/grilled-chicken.jpeg" alt="Dish 3">
+              <img src="images/vegetable-lasagna.jpeg" alt="Dish 4">
+              <img src="images/vegetable-stir-fry.jpeg" alt="Dish 5">
+          </div>
+      </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer>
+      <p>Contact us: info@theelegantdine.com | Phone: 123-456-7890</p>
+    </footer>
+  </body>
+</html>

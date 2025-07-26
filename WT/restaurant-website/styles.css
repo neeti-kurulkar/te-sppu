@@ -1,0 +1,313 @@
+/* General Styles */
+body {
+  font-family: "Georgia", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;/* Light background */
+  color: #4f4f4f; 
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #3e2723; 
+  padding: 15px 0;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.navbar ul li a:hover {
+  color: #b5a6a1; 
+}
+
+/* Header Styling */
+.header {
+  position: relative;
+  background: url("images/restaurant-image.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  background-size: cover;
+}
+
+.header h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+/* Main Content Section */
+.main-content {
+    display: flex;
+    justify-content: space-between; 
+    padding: 40px;
+  }
+
+/* Reservation Form Styling */
+.reservation {
+  width: 45%;  
+  text-align: center;
+  padding: 40px;
+  background-color: #3e2723; 
+  margin: 30px auto;
+  border-radius: 10px;
+  max-width: 500px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.reservation h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.reservation .separator {
+  border-top: 2px solid #b5a6a1; 
+  width: 60%; 
+  margin: 20px auto; 
+}
+
+.reservation label {
+  font-size: 18px;
+  color: #ddd;
+  font-weight: 500;
+  text-align: left; 
+  display: block;
+  margin-bottom: 8px;
+  width: 60%; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reservation input,
+.reservation select {
+  width: 60%; 
+  padding: 12px 18px;
+  font-size: 16px;
+  border: 2px solid #3e2723; 
+  border-radius: 8px;
+  background-color: white;
+  color: #4f4f4f;
+  margin-bottom: 20px; 
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: border-color 0.3s ease;
+}
+
+.reservation input:focus,
+.reservation select:focus {
+  border-color: #b5a6a1; 
+  outline: none;
+}
+
+.reservation button {
+  padding: 15px 30px;
+  background-color: #6d4c41; 
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reservation button:hover {
+  background-color: #5d4037; 
+}
+
+.reservation button:active {
+  transform: translateY(0);
+}
+
+/* Gallery Section */
+.gallery {
+    width: 45%; 
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery h2 {
+    font-size: 36px;
+    color: #3e2723;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .gallery-images img {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-images img:hover {
+    transform: scale(1.05); 
+  }
+
+/* Menu Page Styles */
+.menu-container {
+    text-align: center;
+    padding: 40px;
+    background-color: #f5f5f5; 
+  }
+  
+  .menu-container h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #3e2723; 
+  }
+  
+  /* Flexbox adjustments for responsiveness */
+  .menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex-wrap: wrap; 
+  }
+  
+  .menu-item img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 30px;
+    margin-bottom: 15px; 
+  }
+  
+  .dish-details {
+    max-width: 500px;
+    text-align: left;
+    flex-grow: 1; 
+  }
+  
+  .dish-details h3 {
+    font-size: 24px;
+    color: #6d4c41; 
+    margin-bottom: 10px;
+  }
+  
+  .dish-details p {
+    font-size: 16px;
+    color: #4f4f4f; 
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3e2723; 
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .menu-item {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .menu-item img {
+      margin-right: 0; 
+      margin-bottom: 20px; 
+      width: 100%; 
+      height: auto; 
+    }
+  
+    .dish-details {
+      text-align: center; 
+      max-width: 90%; 
+    }
+  
+    .menu-container h2 {
+      font-size: 28px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu-container h2 {
+      font-size: 24px; 
+    }
+  
+    .price {
+      font-size: 16px; 
+    }
+  
+    .dish-details p {
+      font-size: 14px; 
+    }
+  }
+  
+  
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #3e2723; 
+  color: white;
+  margin-top: 50px;
+}
+
+/* About Us Page Styles */
+.about-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #f5f5f5; 
+}
+
+.about-container h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #3e2723; 
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.about-content p {
+  font-size: 18px;
+  color: #4f4f4f; 
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
